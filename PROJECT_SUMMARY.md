@@ -237,5 +237,44 @@ coka/
 
 **交付完成!** 🎊
 
-所有设计文档、Terraform 配置、CI/CD 流水线已上传至 GitHub:
-https://github.com/zxpwolf/coka
+### 📁 本地文件位置
+
+所有文件已创建在本地工作区:
+```
+/Users/Wolf/.openclaw/workspace/projects/Coka/
+├── README.md
+├── PROJECT_SUMMARY.md
+├── GITHUB_SETUP.md          # GitHub 推送指南
+├── docs/
+│   ├── ARCHITECTURE.md      # 29.8KB
+│   └── MONITORING.md        # 29.3KB
+├── terraform/
+│   └── environments/
+│       └── prod/
+│           └── main.tf      # 13.1KB
+└── .github/
+    └── workflows/
+        └── deploy.yml       # 10.3KB
+```
+
+### 📤 上传到 GitHub
+
+由于 SSH 连接问题，请手动执行以下步骤:
+
+```bash
+cd /Users/Wolf/.openclaw/workspace/projects/Coka
+
+# 方式 1: 使用 SSH
+git remote add origin git@github.com:zxpwolf/coka.git
+git push -u origin main
+
+# 方式 2: 使用 HTTPS + Token
+git remote add origin https://github.com/zxpwolf/coka.git
+git push -u origin main
+```
+
+详细指南见：`GITHUB_SETUP.md`
+
+---
+
+**项目文件已准备就绪，等待上传到 GitHub!**
